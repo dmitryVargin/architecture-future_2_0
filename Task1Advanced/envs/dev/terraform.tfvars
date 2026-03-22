@@ -1,0 +1,6 @@
+yc_cloud_id        = "b1g000000000000example"
+yc_folder_id       = "b1g000000000000devfld"
+zone               = "ru-central1-a"
+subnet_id          = "e9b000000000000devsub"
+ssh_public_key     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIExample dev@future2"
+boot_disk_image_id = "fd8000000000000ubuntu"
