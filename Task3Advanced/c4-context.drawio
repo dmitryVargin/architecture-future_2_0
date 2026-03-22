@@ -1,0 +1,246 @@
+<mxfile host="draw.io" modified="2026-03-22T12:00:00.000Z" agent="draw.io" version="21.0.0" type="device">
+  <diagram id="c4-context" name="C4 Context — Будущее 2.0">
+    <mxGraphModel dx="2200" dy="1600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="3000" pageHeight="2000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- ===== EXTERNAL ACTORS (People) ===== -->
+        <mxCell id="person_doctor" value="&lt;b&gt;Врач&lt;/b&gt;&lt;br&gt;[Пользователь]&lt;br&gt;&lt;br&gt;Проводит осмотры,&lt;br&gt;назначает лечение,&lt;br&gt;использует ИИ-диагностику" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#08427B;fontColor=#ffffff;strokeColor=#073B6F;arcSize=50;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="200" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="person_operator" value="&lt;b&gt;Оператор клиники&lt;/b&gt;&lt;br&gt;[Пользователь]&lt;br&gt;&lt;br&gt;Регистрирует пациентов,&lt;br&gt;управляет расписанием" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#08427B;fontColor=#ffffff;strokeColor=#073B6F;arcSize=50;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="280" y="40" width="200" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="person_analyst" value="&lt;b&gt;Бизнес-аналитик&lt;/b&gt;&lt;br&gt;[Пользователь]&lt;br&gt;&lt;br&gt;Анализирует данные,&lt;br&gt;строит отчёты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#08427B;fontColor=#ffffff;strokeColor=#073B6F;arcSize=50;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="520" y="40" width="200" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="person_patient" value="&lt;b&gt;Пациент&lt;/b&gt;&lt;br&gt;[Пользователь]&lt;br&gt;&lt;br&gt;Записывается на приём,&lt;br&gt;получает результаты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#08427B;fontColor=#ffffff;strokeColor=#073B6F;arcSize=50;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="760" y="40" width="200" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="person_fintech" value="&lt;b&gt;Финтех-клиент&lt;/b&gt;&lt;br&gt;[Пользователь]&lt;br&gt;&lt;br&gt;Использует финансовые&lt;br&gt;сервисы, кредиты, платежи" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#08427B;fontColor=#ffffff;strokeColor=#073B6F;arcSize=50;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="40" width="200" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="person_dpo" value="&lt;b&gt;Data Product Owner&lt;/b&gt;&lt;br&gt;[Пользователь]&lt;br&gt;&lt;br&gt;Управляет дата-продуктами,&lt;br&gt;каталогом и качеством данных" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#08427B;fontColor=#ffffff;strokeColor=#073B6F;arcSize=50;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="40" width="210" height="130" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== INTERNAL SYSTEMS ===== -->
+        <mxCell id="sys_portal" value="&lt;b&gt;Портал самообслуживания&lt;br&gt;данных&lt;/b&gt;&lt;br&gt;[Программная система]&lt;br&gt;&lt;br&gt;Self-service портал для&lt;br&gt;поиска и подписки на&lt;br&gt;дата-продукты (Data Mesh)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="580" y="260" width="240" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="sys_events" value="&lt;b&gt;Платформа событий&lt;/b&gt;&lt;br&gt;[Программная система]&lt;br&gt;&lt;br&gt;Событийная шина на Apache&lt;br&gt;Kafka для асинхронного&lt;br&gt;обмена между доменами" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="580" y="460" width="240" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="sys_clinics" value="&lt;b&gt;Домен «Клиники»&lt;/b&gt;&lt;br&gt;[Программная система]&lt;br&gt;&lt;br&gt;Управление пациентами,&lt;br&gt;расписанием, приёмами" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="460" width="220" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="sys_fintech" value="&lt;b&gt;Домен «Финтех»&lt;/b&gt;&lt;br&gt;[Программная система]&lt;br&gt;&lt;br&gt;Кредитование, платежи,&lt;br&gt;управление счетами" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="300" y="460" width="220" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="sys_ai" value="&lt;b&gt;Домен «ИИ-диагностика»&lt;/b&gt;&lt;br&gt;[Программная система]&lt;br&gt;&lt;br&gt;ML-модели для медицинской&lt;br&gt;диагностики и скоринга" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="880" y="460" width="230" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="sys_analytics" value="&lt;b&gt;Домен «Аналитика и BI»&lt;/b&gt;&lt;br&gt;[Программная система]&lt;br&gt;&lt;br&gt;Аналитические дашборды,&lt;br&gt;отчётность, self-service BI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="460" width="230" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="sys_hr" value="&lt;b&gt;Домен «Персонал и&lt;br&gt;инвентаризация»&lt;/b&gt;&lt;br&gt;[Программная система]&lt;br&gt;&lt;br&gt;Управление персоналом,&lt;br&gt;складами, оборудованием" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=#3C7FC0;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="230" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== LEGACY SYSTEMS (dashed, lighter) ===== -->
+        <mxCell id="legacy_dwh" value="&lt;b&gt;DWH (SQL Server 2008)&lt;/b&gt;&lt;br&gt;[Устаревшая система]&lt;br&gt;&lt;br&gt;Хранилище данных,&lt;br&gt;выводится из эксплуатации" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;fontColor=#333333;strokeColor=#999999;dashed=1;dashPattern=8 4;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="680" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="legacy_camel" value="&lt;b&gt;Apache Camel ESB&lt;/b&gt;&lt;br&gt;[Устаревшая система]&lt;br&gt;&lt;br&gt;Интеграционная шина,&lt;br&gt;мост совместимости" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;fontColor=#333333;strokeColor=#999999;dashed=1;dashPattern=8 4;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="300" y="680" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="legacy_pb" value="&lt;b&gt;PowerBuilder&lt;/b&gt;&lt;br&gt;[Устаревшая система]&lt;br&gt;&lt;br&gt;Толстый клиент,&lt;br&gt;выводится из эксплуатации" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;fontColor=#333333;strokeColor=#999999;dashed=1;dashPattern=8 4;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="560" y="680" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== EXTERNAL SYSTEMS ===== -->
+        <mxCell id="ext_bank" value="&lt;b&gt;Банковские системы&lt;br&gt;(ЦБ РФ)&lt;/b&gt;&lt;br&gt;[Внешняя система]&lt;br&gt;&lt;br&gt;Банковская отчётность,&lt;br&gt;платёжные шлюзы" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#999999;fontColor=#ffffff;strokeColor=#666666;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="860" y="680" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ext_reg" value="&lt;b&gt;Регуляторные системы&lt;br&gt;(ФОМС, Минздрав)&lt;/b&gt;&lt;br&gt;[Внешняя система]&lt;br&gt;&lt;br&gt;Реестры, отчётность,&lt;br&gt;страховые данные" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#999999;fontColor=#ffffff;strokeColor=#666666;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="680" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ext_pharma" value="&lt;b&gt;Фармацевтические&lt;br&gt;компании&lt;/b&gt;&lt;br&gt;[Внешняя система]&lt;br&gt;&lt;br&gt;Каталоги препаратов,&lt;br&gt;заказы" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#999999;fontColor=#ffffff;strokeColor=#666666;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="260" width="220" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ext_equip" value="&lt;b&gt;Производитель мед.&lt;br&gt;оборудования&lt;/b&gt;&lt;br&gt;[Внешняя система]&lt;br&gt;&lt;br&gt;Данные телеметрии,&lt;br&gt;обслуживание" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#999999;fontColor=#ffffff;strokeColor=#666666;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="320" y="260" width="210" height="130" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== ARROWS: People → Systems ===== -->
+        <mxCell id="arr1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#08427B;fontColor=#333333;fontSize=11;" edge="1" source="person_doctor" target="sys_clinics" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr1_label" value="Ведёт приём, назначения" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr1">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.3;entryY=0;strokeColor=#08427B;fontColor=#333333;fontSize=11;" edge="1" source="person_doctor" target="sys_ai" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr2_label" value="Запрашивает ИИ-диагностику" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr2">
+          <mxGeometry x="-0.2" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#08427B;fontColor=#333333;fontSize=11;" edge="1" source="person_operator" target="sys_clinics" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr3_label" value="Регистрация, расписание" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr3">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#08427B;fontColor=#333333;fontSize=11;" edge="1" source="person_analyst" target="sys_portal" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr4_label" value="Поиск и подписка на данные" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr4">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr4b" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#08427B;fontColor=#333333;fontSize=11;" edge="1" source="person_analyst" target="sys_analytics" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr4b_label" value="Строит отчёты и дашборды" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr4b">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.7;entryY=0;strokeColor=#08427B;fontColor=#333333;fontSize=11;" edge="1" source="person_patient" target="sys_clinics" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr5_label" value="Запись на приём, результаты" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr5">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#08427B;fontColor=#333333;fontSize=11;" edge="1" source="person_fintech" target="sys_fintech" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr6_label" value="Кредиты, платежи, счета" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr6">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.7;entryY=0;strokeColor=#08427B;fontColor=#333333;fontSize=11;" edge="1" source="person_dpo" target="sys_portal" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr7_label" value="Управляет дата-продуктами" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr7">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <!-- ===== ARROWS: Systems ↔ Systems ===== -->
+        <mxCell id="arr_s1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#438DD5;fontColor=#333333;fontSize=11;" edge="1" source="sys_clinics" target="sys_events" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_s1_l" value="Публикует события" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr_s1">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr_s2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#438DD5;fontColor=#333333;fontSize=11;" edge="1" source="sys_fintech" target="sys_events" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_s2_l" value="Публикует события" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr_s2">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr_s3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#438DD5;fontColor=#333333;fontSize=11;" edge="1" source="sys_events" target="sys_ai" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_s3_l" value="Потребляет события" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr_s3">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr_s4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#438DD5;fontColor=#333333;fontSize=11;" edge="1" source="sys_events" target="sys_analytics" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_s4_l" value="Потребляет события" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr_s4">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr_s5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#438DD5;fontColor=#333333;fontSize=11;" edge="1" source="sys_portal" target="sys_events" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_s5_l" value="Подписка на дата-продукты" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr_s5">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr_s6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#438DD5;fontColor=#333333;fontSize=11;" edge="1" source="sys_hr" target="sys_events" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_s6_l" value="Публикует события" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr_s6">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <!-- ===== ARROWS: Legacy ↔ Systems ===== -->
+        <mxCell id="arr_l1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#999999;fontColor=#666666;fontSize=11;dashed=1;dashPattern=4 4;" edge="1" source="legacy_camel" target="sys_events" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_l1_l" value="Мост совместимости" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#999999;" vertex="1" connectable="0" parent="arr_l1">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr_l2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#999999;fontColor=#666666;fontSize=11;dashed=1;dashPattern=4 4;" edge="1" source="legacy_dwh" target="sys_analytics" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_l2_l" value="Миграция данных" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#999999;" vertex="1" connectable="0" parent="arr_l2">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr_l3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#999999;fontColor=#666666;fontSize=11;dashed=1;dashPattern=4 4;" edge="1" source="legacy_pb" target="legacy_camel" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_l3_l" value="Устаревший протокол" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#999999;" vertex="1" connectable="0" parent="arr_l3">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <!-- ===== ARROWS: External systems ===== -->
+        <mxCell id="arr_e1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#666666;fontColor=#333333;fontSize=11;" edge="1" source="sys_fintech" target="ext_bank" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_e1_l" value="Платёжные операции, отчётность" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr_e1">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr_e2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#666666;fontColor=#333333;fontSize=11;" edge="1" source="sys_clinics" target="ext_reg" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_e2_l" value="Реестры ОМС, мед. отчётность" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr_e2">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr_e3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#666666;fontColor=#333333;fontSize=11;" edge="1" source="sys_hr" target="ext_pharma" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_e3_l" value="Заказы препаратов" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr_e3">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="arr_e4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeColor=#666666;fontColor=#333333;fontSize=11;" edge="1" source="sys_hr" target="ext_equip" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_e4_l" value="Телеметрия, обслуживание" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="arr_e4">
+          <mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
