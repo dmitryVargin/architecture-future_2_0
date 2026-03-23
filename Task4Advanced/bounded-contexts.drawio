@@ -1,0 +1,161 @@
+<mxfile host="draw.io" modified="2026-03-22T12:00:00.000Z" agent="draw.io" version="21.0.0" type="device">
+  <diagram id="bounded-contexts" name="Context Map">
+    <mxGraphModel dx="1800" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="&lt;b&gt;Context Map — «Будущее 2.0»&lt;/b&gt;" style="text;html=1;fontSize=22;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="700" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ctx1" value="&lt;b&gt;Управление пациентами&lt;/b&gt;&lt;br&gt;(Patient Management)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=13;verticalAlign=middle;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="120" width="260" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ctx2" value="&lt;b&gt;Клинические операции&lt;/b&gt;&lt;br&gt;(Clinical Operations)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=13;verticalAlign=middle;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="500" y="120" width="260" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ctx3" value="&lt;b&gt;Медицинские исследования и ИИ&lt;/b&gt;&lt;br&gt;(Medical Research &amp; AI)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;fontSize=13;verticalAlign=middle;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="900" y="120" width="280" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ctx4" value="&lt;b&gt;Финансовые операции&lt;/b&gt;&lt;br&gt;(Financial Operations)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontSize=13;verticalAlign=middle;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="360" width="260" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ctx5" value="&lt;b&gt;Кредитование&lt;/b&gt;&lt;br&gt;(Credit / Lending)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=13;verticalAlign=middle;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="500" y="360" width="260" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ctx6" value="&lt;b&gt;Аналитика и BI&lt;/b&gt;&lt;br&gt;(Analytics &amp; BI)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F7FA;strokeColor=#00838F;fontSize=13;verticalAlign=middle;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="900" y="360" width="280" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ctx7" value="&lt;b&gt;Управление персоналом&lt;/b&gt;&lt;br&gt;(HR / Personnel)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F8E9;strokeColor=#558B2F;fontSize=13;verticalAlign=middle;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="600" width="260" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ctx8" value="&lt;b&gt;Инвентаризация&lt;/b&gt;&lt;br&gt;(Inventory)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E7;strokeColor=#BF360C;fontSize=13;verticalAlign=middle;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="500" y="600" width="260" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ctx9" value="&lt;b&gt;Платформа данных&lt;/b&gt;&lt;br&gt;(Data Platform)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#546E7A;fontSize=13;verticalAlign=middle;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="900" y="600" width="280" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel1" value="Customer/Supplier" style="endArrow=block;endFill=1;html=1;strokeColor=#1565C0;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx1" target="ctx2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel2" value="Customer/Supplier" style="endArrow=block;endFill=1;html=1;strokeColor=#7B1FA2;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx2" target="ctx3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel3" value="Shared Kernel" style="endArrow=block;endFill=1;html=1;strokeColor=#E65100;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;edgeStyle=orthogonalEdgeStyle;startArrow=block;startFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx4" target="ctx5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel4" value="Anti-Corruption Layer (ACL)" style="endArrow=block;endFill=1;html=1;strokeColor=#C62828;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;edgeStyle=orthogonalEdgeStyle;dashed=1;dashPattern=8 4;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx1" target="ctx4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel5" value="Conformist" style="endArrow=block;endFill=1;html=1;strokeColor=#BF360C;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx8" target="ctx2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel6" value="Customer/Supplier" style="endArrow=block;endFill=1;html=1;strokeColor=#558B2F;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx7" target="ctx2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel_bi_1" value="Published Language (события)" style="endArrow=block;endFill=1;html=1;strokeColor=#00838F;fontSize=10;fontStyle=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=4 4;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.15;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx1" target="ctx6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="195" />
+              <mxPoint x="840" y="375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel_bi_2" value="Published Language" style="endArrow=block;endFill=1;html=1;strokeColor=#00838F;fontSize=10;fontStyle=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=4 4;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx2" target="ctx6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="195" />
+              <mxPoint x="850" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel_bi_4" value="Published Language" style="endArrow=block;endFill=1;html=1;strokeColor=#00838F;fontSize=10;fontStyle=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=4 4;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx5" target="ctx6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel_bi_5" value="Published Language" style="endArrow=block;endFill=1;html=1;strokeColor=#00838F;fontSize=10;fontStyle=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=4 4;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx7" target="ctx6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="625" />
+              <mxPoint x="850" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel_bi_6" value="Published Language" style="endArrow=block;endFill=1;html=1;strokeColor=#00838F;fontSize=10;fontStyle=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=4 4;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.85;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx8" target="ctx6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="615" />
+              <mxPoint x="860" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel_dp_1" value="OHS" style="endArrow=block;endFill=1;html=1;strokeColor=#546E7A;fontSize=10;fontStyle=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=2 2;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.15;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx3" target="ctx9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="145" />
+              <mxPoint x="1240" y="520" />
+              <mxPoint x="942" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel_dp_2" value="OHS" style="endArrow=block;endFill=1;html=1;strokeColor=#546E7A;fontSize=10;fontStyle=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=2 2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx4" target="ctx9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="520" />
+              <mxPoint x="870" y="520" />
+              <mxPoint x="870" y="625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel_dp_3" value="Open Host Service (OHS)" style="endArrow=block;endFill=1;html=1;strokeColor=#546E7A;fontSize=10;fontStyle=2;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=2 2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctx8" target="ctx9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend_title" value="&lt;b&gt;Легенда (DDD Relationship Types)&lt;/b&gt;" style="text;html=1;fontSize=13;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="120" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1" value="─── Customer/Supplier (поставщик/потребитель)" style="text;html=1;fontSize=11;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="155" width="350" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2" value="═══ Shared Kernel (общее ядро)" style="text;html=1;fontSize=11;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="180" width="350" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3" value="- - - ACL (антикоррупционный слой)" style="text;html=1;fontSize=11;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="205" width="350" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4" value="─── Conformist (конформист)" style="text;html=1;fontSize=11;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="230" width="350" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg5" value="· · · Published Language (события домена)" style="text;html=1;fontSize=11;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="255" width="350" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg6" value="· · · Open Host Service (OHS)" style="text;html=1;fontSize=11;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="280" width="350" height="25" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
